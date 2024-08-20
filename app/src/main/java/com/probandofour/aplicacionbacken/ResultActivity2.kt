@@ -22,6 +22,8 @@ class ResultActivity2 : AppCompatActivity() {
 
         texVePan2 = findViewById(R.id.TextoPan2)
 
+        val name: String = intent.extras.getString("EXTRA_NAME")
+
 
 
     }
