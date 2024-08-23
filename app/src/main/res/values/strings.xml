@@ -1,4 +1,23 @@
 <resources>
     <string name="app_name">AplicacionBacken</string>
     <string name="Consult">Consulta</string>
+    <string name="Height">Altura</string>
+    <string name="Weight">Peso</string>
+    <string name="Age">Edad</string>
+    <string name="Calculate">Calcular</string>
+    <string name="YourResult">Tu resultado</string>
+    <string name="Recalcute">Recalcular</string>
+
+    <string name="eror">Error</string>
+
+    <string name="Title_bajo_peso">Bajo peso</string>
+    <string name="Description_bajo_peso">Estás por debajo de lo óptimo, respecto a tu peso y altura</string>
+
+    <string name="Title_peso_normal">Peso normal</string>
+    <string name="Description_peso_normal">Estás en tu peso óptimo, respecto a tu peso y altura</string>
+
+    <string name="Title_sobrepeso">Sobrepeso</string>
+    <string name="Description_sobrepeso">Estás con sobrepeso respecto a tu peso y altura</string>
+
+
 </resources>

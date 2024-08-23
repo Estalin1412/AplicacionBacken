@@ -57,6 +57,7 @@
         android:textColor="@color/white"
         android:layout_marginBottom="8dp"
         />
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnIMCapp"
         android:layout_width="match_parent"
@@ -67,4 +68,10 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.AppCompatButton>
 </androidx.appcompat.widget.LinearLayoutCompat>
