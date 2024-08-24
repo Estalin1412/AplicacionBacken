@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import android.content.Intent
+import com.probandofour.aplicacionbacken.appFirst.appFirstActivity
 import com.probandofour.aplicacionbacken.imcCalculator.imcCalculatorActivity
 
 class MenuActivity : AppCompatActivity() {
@@ -18,6 +19,8 @@ class MenuActivity : AppCompatActivity() {
         //Variables
         lateinit var btnSaludAppMenu: Button
         lateinit var btnIMCapp: Button
+        //Para primera aplicacion
+        lateinit var ButtonFirst: Button
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -28,10 +31,15 @@ class MenuActivity : AppCompatActivity() {
         //Asociacion de variable
         btnSaludAppMenu = findViewById(R.id.btnSaludAppMenu)
         btnIMCapp= findViewById(R.id.btnIMCapp)
+
+        ButtonFirst =findViewById(R.id.btnFirst)
         //Usar métodos
         btnSaludAppMenu.setOnClickListener{ navigateUpToSaludApp() }
         btnIMCapp.setOnClickListener{
             navigateToIMCapp()
+        }
+        ButtonFirst.setOnClickListener{
+            navigateFirstApp()
         }
 
 
@@ -45,5 +53,12 @@ class MenuActivity : AppCompatActivity() {
     private fun navigateUpToSaludApp(){
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
+    }
+
+    //Funcion para FirstApp
+    private fun navigateFirstApp(){
+        val intent= Intent(this, appFirstActivity::class.java)
+        startActivity(intent)
+
     }
 }

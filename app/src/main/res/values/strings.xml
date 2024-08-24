@@ -19,5 +19,14 @@
     <string name="Title_sobrepeso">Sobrepeso</string>
     <string name="Description_sobrepeso">Estás con sobrepeso respecto a tu peso y altura</string>
 
+    <!-- FIRST APP-->
 
+    <string name="YourWelcome">Bienvenido </string>
+    <string name="Categories">Categorías</string>
+    <string name="Task">Tareas</string>
+    <string name="first_dialog_add_task">Añade la tarea</string>
+    <string name="Business">Negocios</string>
+    <string name="Others">Otros</string>
+    <string name="Personal">Personal</string>
+    <string name="Add_Task">Agregar tarea</string>
 </resources>

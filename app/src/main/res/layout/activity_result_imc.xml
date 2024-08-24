@@ -9,8 +9,8 @@
     android:background="@color/AzulMarine"
 
     android:padding="16dp"
-
     >
+
     <TextView
         android:id="@+id/viewTextResultado"
         android:layout_marginTop="16dp"

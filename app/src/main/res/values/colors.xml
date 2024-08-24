@@ -6,4 +6,9 @@
     <color name="purple">#8010A9</color>
     <color name="ClareBlue">#0B254E</color>
     <color name="AzulEncendido">#2C39BD</color>
+    
+    <!-- FirstApp-->
+    
+    <color name="RedWine">#2E0819</color>
+
 </resources>
