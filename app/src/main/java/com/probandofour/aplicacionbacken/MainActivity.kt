@@ -12,11 +12,16 @@ import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
 
 class MainActivity : AppCompatActivity() {
 
     public lateinit var boton: Button
     public lateinit var vText: TextView
+
+    val database = Firebase.database
+    val myRef = database.getReference("Conectando")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,7 +40,7 @@ class MainActivity : AppCompatActivity() {
         boton.setOnClickListener{
             val variableTexto =vText.text.toString()
             Toast.makeText(this, "Bienvenido ${variableTexto}!!", Toast.LENGTH_SHORT).show()
-
+            myRef.setValue(variableTexto)
             if(variableTexto.isNotEmpty()){
                 val intent = Intent(this, ResultActivity2::class.java)
                 intent.putExtra("EXTRA_NAME",variableTexto)
